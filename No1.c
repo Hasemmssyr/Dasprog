@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #define FALSE 0
 #define TRUE 1
 
@@ -10,6 +11,7 @@ struct sNode {
 
 typedef struct sNode tNode;
 typedef tNode *Node;
+int FLAG = false;
 
 void insert(Node *start, int data);
 void bubbleSort(Node start);
@@ -74,6 +76,7 @@ void bubbleSort(Node start) {
         }
         temp1 = temp;
     } while(swapped);
+    FLAG = true;
 }
 
 void swap(Node a, Node b) {
