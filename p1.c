@@ -10,7 +10,7 @@ struct sNode {
 
 typedef struct sNode tNode;
 typedef tNode *Node;
-int FLAG = false;
+int flag = FALSE;
 
 void insert(Node *start, int data);
 void bubbleSort(Node start);
@@ -75,7 +75,7 @@ void bubbleSort(Node start) {
         }
         temp1 = temp;
     } while(swapped);
-    FLAG = true;
+    flag = TRUE;
 }
 
 void swap(Node a, Node b) {
